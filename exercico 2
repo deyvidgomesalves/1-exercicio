@@ -1,0 +1,8 @@
+cont = input("Informe uma Palavra: ")
+
+quat_a = cont.lower().count('a')
+
+if quat_a > 0:
+    print("A letra 'a' aparece {} na palvra.".format(quat_a))
+else:
+    print("A letra 'a' não aparece na palavra.")
