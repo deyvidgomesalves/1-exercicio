@@ -1,0 +1,17 @@
+def fibonacci(n):
+    if n < 0:
+        return False
+
+    x, y = 0, 1
+    while x <= n:
+        if x == n:
+            return True
+        x, y = y, x + y
+    return False
+
+numero = int(input("Digite um número: "))
+
+if fibonacci(numero):
+    print("O número digitado {} pertence à sequência de Fibonacci.".format(numero))
+else:
+    print("O número digitado {} não pertence à sequência de Fibonacci.".format(numero))
